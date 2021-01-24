@@ -5,7 +5,7 @@ body {
   background: -webkit-linear-gradient(top left, #e0b1f5, #bef9f7);
   background: -moz-linear-gradient(top left, #e0b1f5, #bef9f7);
   background: linear-gradient(to bottom right, #e0b1f5, #bef9f7);
-  height: 4000px;
+  /* height: 4000px; */
 }
 
 .container {
@@ -26,6 +26,9 @@ body {
   padding: 10px;
   background-color: inherit;
 }
+.button:hover {
+  background-color: #f2c363;
+}
 
 .left {
   float: left;
@@ -36,6 +39,10 @@ body {
   font-weight: bolder;
   /* vertical-align: text-top; */
 }
+.center:hover {
+  color: white;
+}
+
 .right {
   float: right;
   margin-top: 0.5rem;
@@ -47,8 +54,11 @@ h1 {
 }
 h2 {
   font-size: 50px;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 4rem 0rem 0rem 0rem;
+  margin: 2rem 4.5rem;
+}
+#h1 {
+  padding-left: 10%;
 }
 .row {
   display: flex;
@@ -68,24 +78,24 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .image2 {
   display: block;
-  margin-left: 0%;
+  margin-left: 10%;
   margin-right: auto;
   width: 70%;
 }
 .imageCEO {
   object-fit: contain;
-  width: 45%;
+  width: 65%;
+  padding-left: 15%;
 }
 
-.image3{
-    object-fit: contain;
-    width: 90%;
-    display: block;
+.image3 {
+  object-fit: contain;
+  width: 90%;
+  display: block;
 }
 
 .col-2 {
@@ -102,16 +112,30 @@ h2 {
 }
 .boxed {
   background-color: white;
-  border: 1px solid green;
+  border: 1px solid black;
+  box-shadow: 8px 8px 5px grey;
   text-align: center;
   padding: 2rem;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  position: relative;
 }
+.joinBox {
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 8px 8px 5px grey;
+  text-align: center;
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: block;
+}
+
 p {
   font-size: 22px;
-  line-height: 150%;
+  line-height: 130%;
   /* display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -119,9 +143,54 @@ p {
     margin-inline-end: 0px; */
 }
 .p3 {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   margin: 1rem 2rem;
 }
+/* .community{
+    padding: 0.5rem 2rem;
+    margin: 1rem 2rem;
+} */
+
 #pCEO {
-  justify-content: flex-end;
+  text-align: right;
+  padding-left: 10%;
+}
+
+.dreamTeam {
+  text-align: center;
+}
+
+.dreamImage {
+  object-fit: contain;
+  width: 95%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+@media (max-width: 768px) {
+  div.left {
+    display: none;
+  }
+  div.center {
+    float: left;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  .image1 {
+  }
+
+  .dreamTeam {
+    font-size: 40px;
+  }
+  section {
+    flex-direction: column;
+  }
 }
