@@ -180,15 +180,50 @@ p {
     float: left;
     font-size: 30px;
   }
+  h1{
+      font-size: 45px;
+  }
+  #h1{
+      padding: 15px;
+  }
+  h2{
+      font-size: 35px;
+  }
 
   p {
     font-size: 20px;
   }
-  .image1 {
+  .p3 {
+      font-size: 20px;
+    /* padding: 1rem 2rem;
+    margin: 1rem 2rem; */
   }
+  #pCEO{
+      text-align: inherit;
+      font-size: 18px;
+  }
+  .image1 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .image1-1{
+     object-fit: fill;
+  }
+  .imageCEO {
+    object-fit: none ;
+  }
+  
 
   .dreamTeam {
     font-size: 40px;
+  }
+  .dreamImage{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
   }
   section {
     flex-direction: column;
